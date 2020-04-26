@@ -1,0 +1,25 @@
+table thead {
+  color: blue;
+}
+table tbody tr {
+  color: gray;
+}
+
+.low, .medium, .high {
+  font-weight: bold;
+  color: white;
+}
+
+.high {
+  background-color: green;
+}
+
+.medium {
+  background-color: orange;
+}
+
+.low {
+  background-color: red;
+}
+
+/*# sourceMappingURL=table.css.map */

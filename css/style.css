@@ -1,0 +1,158 @@
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: url(/images/halftone-yellow.png);
+}
+
+/* general stuff */
+.main-title{
+    padding-top: 0.5em;
+    font-size: 2em;
+    border-bottom: lightgray solid;
+}
+
+.text-special{
+    font-style: italic;
+    background: lightgray;
+    padding: 0.1em;
+    border-radius: 0.26em;
+    color: #e41d69 ;
+}
+
+.main-content-t{
+    padding-top: 1em;
+    }
+
+#main-content ::selection{
+    background-color: gold;
+    color: blueviolet;
+}
+
+/* Menu */
+.nav-menu{
+    flex-wrap: wrap;
+    background-color: #18181e;
+    overflow: hidden;
+    padding: 5px 20px;
+}
+
+.nav-menu ul{
+    display: flex;
+    list-style-type: none;
+    float: right;
+    text-align: center;
+    margin: 0;
+    padding: 0.5em 0.4em;
+}
+
+.nav-menu ul > li{
+    padding: 0.5em 2em;
+}
+
+.nav-menu ul> li> a {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Gochi Hand', cursive;
+    transition: ease-out 0.25s;
+}
+
+.nav-menu ul > li> a:hover {
+    text-decoration: none;
+    border-bottom: goldenrod solid;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+    
+}
+
+
+/* jumbotron */
+.jumbotron{
+    background: url("/images/tenor.gif");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.jumbotron >.jumb .jumbotron-title , .jumbotron-avatar{
+    margin-bottom: 1em;
+}
+
+
+.jumb{
+    font-family: 'Lobster', cursive;
+    color: goldenrod;
+    text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    text-align: center;
+}
+
+/* Main content */
+
+#main-content{
+    padding-top: 2em;
+}
+
+.stuff-container{
+    font-family: 'Bitter', serif;
+    color: whitesmoke;
+    margin-top: -32px;
+    background-color: whitesmoke;
+    border-radius: 1em;
+    color: black;
+}
+
+/* About me */
+
+.places-prog-languages{
+    position: relative;
+    left: 1em;
+
+}
+.img-ide-python{
+    
+    width: 900px;   
+}
+
+/* Gallery Art */
+
+.gallery-cols{
+    margin-right: 3em;
+    margin-top: 1em;
+}
+
+@media (max-width: 430px){
+    /* .nav-menu{
+        display: none;
+    } */
+
+    .gallery-rows{
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .gallery-rows img {
+        width: 200px;
+    }
+
+    .nav-menu ul{
+        display: inline-block;
+        list-style-type: none;
+        text-align: center;
+        margin: 0;
+        padding: 0.5em 0.4em;
+    }
+    
+}
+
+/* Hobbies */
+
+.list-hobbies{
+    margin-top: 2em;
+    width: 90%;
+}

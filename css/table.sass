@@ -1,0 +1,25 @@
+$color1: blue
+$color2: gray
+
+table
+    thead
+        color: $color1
+    tbody
+        tr
+            color: $color2
+
+%skill
+    font-weight: bold
+    color: white
+
+.high
+    @extend %skill
+    background-color: green
+
+.medium
+    @extend %skill
+    background-color: orange
+
+.low
+    @extend %skill
+    background-color: red
